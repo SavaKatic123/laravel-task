@@ -1,0 +1,12 @@
+{
+  "buildDescriptor" : "build/build.xml",
+  "verification" : {
+    "testNamePatterns" : [".*VerificationPack.*"],
+    "pathPatterns" : ["**tests/Feature/VerificationPack**"],
+    "overwrite" : {
+      "tests/Feature/VerificationPack/phpunit.xml.dist" : "phpunit.xml.dist"
+    }
+  }
+}
+
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="26" assertions="64" errors="1" failures="0" skipped="0" time="1.304432">
+    <testsuite name="Feature" tests="26" assertions="64" errors="1" failures="0" skipped="0" time="1.304432">
+      <testsuite name="Tests\Unit\ProductsTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/ProductsTest.php" tests="7" assertions="10" errors="1" failures="0" skipped="0" time="0.360453">
+        <testcase name="testGetProductMethod" class="Tests\Unit\ProductsTest" classname="Tests.Unit.ProductsTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/ProductsTest.php" line="31" assertions="2" time="0.188720"/>
+        <testcase name="testSaveProductMethod" class="Tests\Unit\ProductsTest" classname="Tests.Unit.ProductsTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/ProductsTest.php" line="38" assertions="4" time="0.037921"/>
+        <testcase name="testEditProductMethod" class="Tests\Unit\ProductsTest" classname="Tests.Unit.ProductsTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/ProductsTest.php" line="57" assertions="1" time="0.035439"/>
+        <testcase name="testGetAllProductsMethod" class="Tests\Unit\ProductsTest" classname="Tests.Unit.ProductsTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/ProductsTest.php" line="75" assertions="1" time="0.020548"/>
+        <testcase name="testDestroyProductMethod" class="Tests\Unit\ProductsTest" classname="Tests.Unit.ProductsTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/ProductsTest.php" line="82" assertions="1" time="0.020875"/>
+        <testcase name="testProductMerchantRelationship" class="Tests\Unit\ProductsTest" classname="Tests.Unit.ProductsTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/ProductsTest.php" line="88" assertions="1" time="0.023555"/>
+        <testcase name="testMigrationBug" class="Tests\Unit\ProductsTest" classname="Tests.Unit.ProductsTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/ProductsTest.php" line="94" assertions="0" time="0.033395">
+          <error type="Illuminate\Database\QueryException">Tests\Unit\ProductsTest::testMigrationBug
+Illuminate\Database\QueryException: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'description' at row 1 (SQL: insert into `products` (`name`, `description`, `merchant_id`, `price`, `status`, `updated_at`, `created_at`) values (New Product, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque diam, elementum vitae imperdiet non, efficitur eu massa. Nam ut ultrices nunc, eu suscipit lectus. Mauris sed eros gravida, elementum turpis quis, ullamcorper felis. Mauris rhoncus nunc molestie dui auctor, vel imperdiet sem pretium. Aliquam massa lorem, mattis et ligula id, tincidunt maximus ex. In porttitor turpis vitae lectus tristique convallis. Aenean eget justo id eros vehicula eleifend. Vestibulum ultrices leo vitae venenatis porta. Donec pretium, arcu et maximus aliquet, ligula sem tempus dolor, at blandit dolor metus non nisl. Aliquam sit amet purus vitae risus pellentesque imperdiet non eu nulla., 1, 10, in_stock, 2019-05-28 11:11:24, 2019-05-28 11:11:24))
+
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/vendor/laravel/framework/src/Illuminate/Database/Connection.php:624
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/vendor/laravel/framework/src/Illuminate/Database/Connection.php:459
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/vendor/laravel/framework/src/Illuminate/Database/Connection.php:411
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php:32
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:2657
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:1349
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:835
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:800
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:663
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:795
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/vendor/laravel/framework/src/Illuminate/Support/helpers.php:1123
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:796
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php:23
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:1614
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:1626
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/app/Repositories/ProductRepository.php:28
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/app/Services/ProductsService.php:30
+/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/ProductsTest.php:104
+</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/RoutesTest.php" tests="8" assertions="31" errors="0" failures="0" skipped="0" time="0.421676">
+        <testcase name="testGetProductListWithMiddleware" class="Tests\Feature\RoutesTest" classname="Tests.Feature.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/RoutesTest.php" line="23" assertions="6" time="0.088840"/>
+        <testcase name="testGetProductAddPageWithMiddleware" class="Tests\Feature\RoutesTest" classname="Tests.Feature.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/RoutesTest.php" line="35" assertions="4" time="0.049002"/>
+        <testcase name="testAddNewProductToDatabaseWithMiddleware" class="Tests\Feature\RoutesTest" classname="Tests.Feature.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/RoutesTest.php" line="45" assertions="6" time="0.054838"/>
+        <testcase name="testGetProductWithMiddleware" class="Tests\Feature\RoutesTest" classname="Tests.Feature.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/RoutesTest.php" line="65" assertions="4" time="0.042695"/>
+        <testcase name="testEditProductPageWithMiddleware" class="Tests\Feature\RoutesTest" classname="Tests.Feature.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/RoutesTest.php" line="77" assertions="4" time="0.031296"/>
+        <testcase name="testUpdateProductWithMiddleware" class="Tests\Feature\RoutesTest" classname="Tests.Feature.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/RoutesTest.php" line="88" assertions="3" time="0.048927"/>
+        <testcase name="testDeleteProductWithMiddleware" class="Tests\Feature\RoutesTest" classname="Tests.Feature.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/RoutesTest.php" line="107" assertions="3" time="0.056440"/>
+        <testcase name="testProductRequestRedirect" class="Tests\Feature\RoutesTest" classname="Tests.Feature.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/RoutesTest.php" line="117" assertions="1" time="0.049638"/>
+      </testsuite>
+      <testsuite name="Tests\VerificationPack\RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/VerificationPack/RoutesTest.php" tests="11" assertions="23" errors="0" failures="0" skipped="0" time="0.522303">
+        <testcase name="testGetProductList" class="Tests\VerificationPack\RoutesTest" classname="Tests.VerificationPack.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/VerificationPack/RoutesTest.php" line="24" assertions="7" time="0.049117"/>
+        <testcase name="testAddEmptyProductName" class="Tests\VerificationPack\RoutesTest" classname="Tests.VerificationPack.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/VerificationPack/RoutesTest.php" line="35" assertions="1" time="0.025554"/>
+        <testcase name="testAddEmptyProductDescription" class="Tests\VerificationPack\RoutesTest" classname="Tests.VerificationPack.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/VerificationPack/RoutesTest.php" line="48" assertions="1" time="0.029477"/>
+        <testcase name="testAddEmptyProductPrice" class="Tests\VerificationPack\RoutesTest" classname="Tests.VerificationPack.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/VerificationPack/RoutesTest.php" line="61" assertions="1" time="0.049959"/>
+        <testcase name="testAddNonNumericPrice" class="Tests\VerificationPack\RoutesTest" classname="Tests.VerificationPack.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/VerificationPack/RoutesTest.php" line="75" assertions="1" time="0.054524"/>
+        <testcase name="testShowProductPage" class="Tests\VerificationPack\RoutesTest" classname="Tests.VerificationPack.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/VerificationPack/RoutesTest.php" line="87" assertions="4" time="0.067504"/>
+        <testcase name="testEditProductPage" class="Tests\VerificationPack\RoutesTest" classname="Tests.VerificationPack.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/VerificationPack/RoutesTest.php" line="96" assertions="4" time="0.055960"/>
+        <testcase name="testUpdateProductWithEmptyName" class="Tests\VerificationPack\RoutesTest" classname="Tests.VerificationPack.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/VerificationPack/RoutesTest.php" line="105" assertions="1" time="0.055229"/>
+        <testcase name="testUpdateProductWithEmptyDescription" class="Tests\VerificationPack\RoutesTest" classname="Tests.VerificationPack.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/VerificationPack/RoutesTest.php" line="119" assertions="1" time="0.045469"/>
+        <testcase name="testUpdateProductWithEmptyPrice" class="Tests\VerificationPack\RoutesTest" classname="Tests.VerificationPack.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/VerificationPack/RoutesTest.php" line="133" assertions="1" time="0.041942"/>
+        <testcase name="testUpdateProductWithNonumericPrice" class="Tests\VerificationPack\RoutesTest" classname="Tests.VerificationPack.RoutesTest" file="/Users/sava/Code/devskiller/laravel/php-laravel-e-shop-phing/task/tests/Feature/VerificationPack/RoutesTest.php" line="148" assertions="1" time="0.047568"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
